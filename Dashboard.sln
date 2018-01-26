@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2006
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard.DAL", "Dashboard.DAL\Dashboard.DAL.csproj", "{A9454156-3431-4E98-B0BF-0DA662D3EDD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard.WebHost", "Dashboard.WebHost\Dashboard.WebHost.csproj", "{A9F53E26-3EE6-458A-BEAF-CE7EEE04E115}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9454156-3431-4E98-B0BF-0DA662D3EDD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9454156-3431-4E98-B0BF-0DA662D3EDD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9454156-3431-4E98-B0BF-0DA662D3EDD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9454156-3431-4E98-B0BF-0DA662D3EDD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9F53E26-3EE6-458A-BEAF-CE7EEE04E115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9F53E26-3EE6-458A-BEAF-CE7EEE04E115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9F53E26-3EE6-458A-BEAF-CE7EEE04E115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9F53E26-3EE6-458A-BEAF-CE7EEE04E115}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA8C7769-51E4-4B68-925E-D5D27984846B}
+	EndGlobalSection
+EndGlobal
