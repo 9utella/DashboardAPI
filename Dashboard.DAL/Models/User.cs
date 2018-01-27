@@ -20,6 +20,12 @@ namespace Dashboard.DAL.Models
         [StringLength(50)]
         public string Email { get; set; }
 
+        public string HashedPassword { get; set; }
+
+        public string Salt { get; set; }
+
+        public DateTime? RegistrationDate { get; set; }
+
         public virtual ICollection<UserInRole> UserInRoles { get; set; }
 
         public User()

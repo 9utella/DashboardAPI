@@ -57,6 +57,10 @@
     <Compile Include="Migrations\201801262207338_AddingRoleTableAndUserInRoleTable.Designer.cs">
       <DependentUpon>201801262207338_AddingRoleTableAndUserInRoleTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201801271303599_UserTableUpdates.cs" />
+    <Compile Include="Migrations\201801271303599_UserTableUpdates.Designer.cs">
+      <DependentUpon>201801271303599_UserTableUpdates.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Role.cs" />
     <Compile Include="Models\User.cs" />
@@ -73,6 +77,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201801262207338_AddingRoleTableAndUserInRoleTable.resx">
       <DependentUpon>201801262207338_AddingRoleTableAndUserInRoleTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801271303599_UserTableUpdates.resx">
+      <DependentUpon>201801271303599_UserTableUpdates.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
