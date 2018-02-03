@@ -48,7 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\EntityContext.cs" />
+    <Compile Include="Core\EntityRepository.cs" />
     <Compile Include="Core\IEntity.cs" />
+    <Compile Include="Core\IEntityRepository.cs" />
     <Compile Include="Migrations\201801262151304_CreateUserTable.cs" />
     <Compile Include="Migrations\201801262151304_CreateUserTable.Designer.cs">
       <DependentUpon>201801262151304_CreateUserTable.cs</DependentUpon>

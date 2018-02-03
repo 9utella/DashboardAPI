@@ -29,7 +29,12 @@ namespace Dashboard.DAL.Core
 
         public IQueryable<T> AllIncluding(params Expression<Func<T, object>>[] includeProperties)
         {
-            throw new NotImplementedException();
+            IQueryable<T> query = _entityContext.Set<T>();
+            foreach(var property in includeProperties)
+            {
+                query = query.Include(property);
+            }
+            return query;
         }
 
         public void Delete(T entity)
@@ -46,22 +51,22 @@ namespace Dashboard.DAL.Core
 
         public IQueryable<T> FindBy(Expression<Func<T, bool>> predicate)
         {
-            throw new NotImplementedException();
+            return _entityContext.Set<T>().Where(predicate);
         }
 
         public IQueryable<T> GetAll()
         {
-            throw new NotImplementedException();
+            return _entityContext.Set<T>();
         }
 
         public T GetSingle(Guid key)
         {
-            throw new NotImplementedException();
+            return _entityContext.Set<T>().Find(key);
         }
 
         public void Save()
         {
-            throw new NotImplementedException();
+            _entityContext.SaveChanges();
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using Autofac.Integration.WebApi;
 using Dashboard.DAL.Core;
 using System;
 using System.Collections.Generic;
@@ -27,7 +28,7 @@ namespace Dashboard.API.Config
             // EF DbContext
             builder.RegisterType<EntityContext>().As<DbContext>().InstancePerApiRequest();
             //Repositories
-
+            builder.RegisterGeneric(typeof(EntityRepository<>)).As(typeof(IEntityRepository<>)).InstancePerApiRequest();
             //Services
             return builder.Build();
         }
