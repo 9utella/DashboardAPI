@@ -75,6 +75,7 @@
     <Compile Include="Config\AutofacWebAPI.cs" />
     <Compile Include="Config\RouteConfig.cs" />
     <Compile Include="Config\WebAPIConfig.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Formatting\SuppressedRequiredMemberSelector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Routing\GuidRouteConstraint.cs" />
@@ -84,6 +85,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Dashboard.BLL\Dashboard.BLL.csproj">
+      <Project>{8F80DABF-0EB1-4377-BA9C-108BA04BE2DD}</Project>
+      <Name>Dashboard.BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Dashboard.DAL\Dashboard.DAL.csproj">
       <Project>{a9454156-3431-4e98-b0bf-0da662d3edd5}</Project>
       <Name>Dashboard.DAL</Name>

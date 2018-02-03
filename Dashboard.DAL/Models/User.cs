@@ -26,6 +26,8 @@ namespace Dashboard.DAL.Models
 
         public DateTime? RegistrationDate { get; set; }
 
+        public bool IsLocked { get; set; }
+
         public virtual ICollection<UserInRole> UserInRoles { get; set; }
 
         public User()
