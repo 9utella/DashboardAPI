@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Dashboard.API.Formatting;
+using Dashboard.API.MessageHandlers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Formatting;
@@ -15,6 +17,11 @@ namespace Dashboard.API.Config
     {
         public static void Configure(HttpConfiguration config)
         {
+            //Message handlers
+            config.MessageHandlers.Add(new RequireHttpsMessageHandler());
+
+            config.MessageHandlers.Add(new DashboardAuthHandler());
+
             //Formatters
             var jqueryFormatter = config.Formatters.FirstOrDefault(_ => _.GetType() == typeof(JQueryMvcFormUrlEncodedFormatter));
 

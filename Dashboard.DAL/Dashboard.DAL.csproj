@@ -51,6 +51,10 @@
     <Compile Include="Core\EntityRepository.cs" />
     <Compile Include="Core\IEntity.cs" />
     <Compile Include="Core\IEntityRepository.cs" />
+    <Compile Include="Core\PaginatedList.cs" />
+    <Compile Include="Extensions\IQueryableExtensions.cs" />
+    <Compile Include="Extensions\RoleRepositoryExtensions.cs" />
+    <Compile Include="Extensions\UserRepositoryExtensions.cs" />
     <Compile Include="Migrations\201801262151304_CreateUserTable.cs" />
     <Compile Include="Migrations\201801262151304_CreateUserTable.Designer.cs">
       <DependentUpon>201801262151304_CreateUserTable.cs</DependentUpon>
@@ -77,6 +81,8 @@
     <Compile Include="Services\IMembershipService.cs" />
     <Compile Include="Services\MembershipService.cs" />
     <Compile Include="Services\OperationResult.cs" />
+    <Compile Include="Services\UserWithRoles.cs" />
+    <Compile Include="Services\ValidUSerContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

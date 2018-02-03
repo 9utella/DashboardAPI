@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using Autofac.Integration.WebApi;
 using Dashboard.DAL.Core;
+using Dashboard.DAL.Services;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -30,6 +31,9 @@ namespace Dashboard.API.Config
             //Repositories
             builder.RegisterGeneric(typeof(EntityRepository<>)).As(typeof(IEntityRepository<>)).InstancePerApiRequest();
             //Services
+            builder.RegisterType<CryptoService>().As<ICryptoService>().InstancePerApiRequest();
+            builder.RegisterType<MembershipService>().As<IMembershipService>().InstancePerApiRequest();
+
             return builder.Build();
         }
     }

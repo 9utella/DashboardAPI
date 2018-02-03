@@ -1,4 +1,5 @@
-﻿using Dashboard.DAL.Models;
+﻿using Dashboard.DAL.Core;
+using Dashboard.DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,8 +10,8 @@ namespace Dashboard.DAL.Services
 {
     public interface IMembershipService
     {
-        ValidUSerContext ValidateUSer(string userName, string password);
-        OperationResult<UserWithRoles> CreateUser(string userName, string email, string password, string[] roles);
+        ValidUserContext ValidateUser(string userName, string password);
+        OperationResult<UserWithRoles> CreateUser(string userName, string email, string password, string role);
         OperationResult<UserWithRoles> CreateUser(string userName, string email, string password, string [] roles);
         UserWithRoles UpdateUser(User user, string username, string email);
 
