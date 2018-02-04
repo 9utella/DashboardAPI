@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard.BLL", "Dashboard.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard.API", "Dashboard.API\Dashboard.API.csproj", "{BF15EF10-BC4D-4B0A-AC2E-564D04EA4959}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dashboard.API.Model", "Dashboard.API.Model\Dashboard.API.Model.csproj", "{9F02B741-FCAE-468E-8511-F2280C93E806}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{BF15EF10-BC4D-4B0A-AC2E-564D04EA4959}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF15EF10-BC4D-4B0A-AC2E-564D04EA4959}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF15EF10-BC4D-4B0A-AC2E-564D04EA4959}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F02B741-FCAE-468E-8511-F2280C93E806}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F02B741-FCAE-468E-8511-F2280C93E806}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F02B741-FCAE-468E-8511-F2280C93E806}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F02B741-FCAE-468E-8511-F2280C93E806}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
